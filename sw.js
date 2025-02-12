@@ -5,7 +5,7 @@
 
 //instalação (cache "armazenamento local")
 self.addEventListener('install',(event) => {
-    event.waitUntill(
+    event.waitUntil(
         caches.open('static')
         .then ((cache) => {
             cache.add('/flexv2/')
