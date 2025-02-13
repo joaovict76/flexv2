@@ -2,7 +2,7 @@
     "name": "gasolina e etanol",
     "short_name": "Flex",
     "description":"Aplicativo para verificar o combustivel mais vantajoso para abastecer em veiculos Flex",
-    "start_url":"/",
+    "start_url":"/flexv2/",
     "scope": "/",
     "display": "standalone",
     "orientation": "portrait-primary",
