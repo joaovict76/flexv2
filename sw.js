@@ -27,7 +27,7 @@ self.addEventListener('activate',(event) => {
 
 //interceptação (solicitação https servindo em cache quando off-line)
 self.addEventListener('fetch', (event) => {
-    event.respondiWitch
+    event.respondiWitch(
         caches.match(event.request)
         .then((response) => {
             if(response) {
@@ -35,6 +35,6 @@ self.addEventListener('fetch', (event) => {
             } else {
                 return fetch(event.request)
             }
-        }
+        })
     )
 })
